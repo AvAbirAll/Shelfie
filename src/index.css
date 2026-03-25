@@ -1,0 +1,26 @@
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html,body,#app{height:100%;font-family:'DM Sans',system-ui,sans-serif;overscroll-behavior:none;-webkit-font-smoothing:antialiased}
+input,button,select,textarea{font-family:'DM Sans',system-ui,sans-serif}
+::-webkit-scrollbar{width:3px}
+::-webkit-scrollbar-thumb{border-radius:4px;background:#D9D1C4}
+.dark ::-webkit-scrollbar-thumb{background:#ffffff22}
+
+@keyframes fadeUp{from{opacity:0;transform:translate3d(0,18px,0)}to{opacity:1;transform:translate3d(0,0,0)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes slideUp{from{transform:translate3d(0,100%,0);opacity:0}to{transform:translate3d(0,0,0);opacity:1}}
+@keyframes pop{0%{opacity:0;transform:scale3d(.87,.87,1)}65%{transform:scale3d(1.03,1.03,1)}100%{opacity:1;transform:scale3d(1,1,1)}}
+@keyframes beam{0%{top:0%}50%{top:92%}100%{top:0%}}
+@keyframes toastIn{from{opacity:0;transform:translate3d(0,-12px,0)}to{opacity:1;transform:translate3d(0,0,0)}}
+@keyframes floatY{0%,100%{transform:translate3d(0,0,0)}50%{transform:translate3d(0,-10px,0)}}
+@keyframes orbFloat{0%,100%{transform:translate3d(0,0,0)}33%{transform:translate3d(18px,-12px,0)}66%{transform:translate3d(-10px,16px,0)}}
+@keyframes searchPulse{0%,100%{opacity:1}50%{opacity:.6}}
+@keyframes shimmer{0%{background-position:-200% 0}100%{background-position:200% 0}}
+
+.fu{animation:fadeUp .38s cubic-bezier(.22,1,.36,1) both}
+.fu1{animation:fadeUp .38s cubic-bezier(.22,1,.36,1) .07s both}
+.fu2{animation:fadeUp .38s cubic-bezier(.22,1,.36,1) .14s both}
+.fu3{animation:fadeUp .38s cubic-bezier(.22,1,.36,1) .21s both}
+.su{animation:slideUp .32s cubic-bezier(.22,1,.36,1) both}
+.pp{animation:pop .28s cubic-bezier(.22,1,.36,1) both}
+.ti{animation:toastIn .24s cubic-bezier(.22,1,.36,1) both}
+.fl{animation:floatY 4s ease-in-out infinite}
